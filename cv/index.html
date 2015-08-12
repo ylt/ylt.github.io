@@ -1,0 +1,319 @@
+<html>
+<head>
+    <title></title>
+    <meta content="">
+    <style>
+        @font-face {
+            font-family: Fontin;
+            src: url(Fontin.otf);
+        }
+        @font-face {
+            font-family: Fontin;
+            src: url(Fontin-Bold.otf);
+            font-weight: bold;
+        }
+        /* browser only supports faked small caps
+            so add smallcaps variant under another name
+        */
+        @font-face {
+            font-family: "Fontin Small Caps";
+            src: url(Fontin-SmallCaps.otf);
+        }
+
+
+        body {
+            max-width: 11in;
+            margin-left: auto;
+            margin-right: auto;
+
+            margin-top: 0.5in;
+
+            font-size: 10pt;
+            font-family: FontIn;
+        }
+
+        h1 {
+            font-size: 24pt;
+            text-align: center;
+
+            font-weight: normal;
+        }
+
+        h2 {
+            padding-bottom: 1px;
+            border-bottom: #000 1px solid;
+            font-family: FontIn Small Caps;
+            font-weight: normal;
+            font-size: 17.28pt;
+        }
+
+        .bigtable {
+            margin: auto;
+            width: 95%;
+        }
+
+        ul.modules {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.modules li {
+            display: inline-block;
+            font-size: 9pt;
+        }
+
+        /* inline block gets rid of bullets, re-add them */
+        ul.modules li:before {
+            content: "\2022";
+        }
+
+        .yearcol {
+            min-width: 1cm;
+            width: 3cm;
+            word-wrap:break-word;
+            max-width: 3cm;
+            text-align: right;
+            padding-right: 5px;
+            vertical-align: top;
+        }
+
+
+        td {
+            padding: 0px;
+        }
+
+        .smalltext {
+            font-size: 9pt;
+            padding-bottom: 2px;
+        }
+
+        a {
+            color: #4078C0;
+        }
+
+        a:visited {
+            color: #4078C0;
+        }
+
+        .details td:first-child {
+            text-align: right;
+            padding-right: 20px;
+            font-family: FontIn Small Caps;
+        }
+
+        .nowrap {
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+
+        @media print, screen and (max-width: 800px){
+            body {
+                width: 100%;
+                margin: 0;
+            }
+            .yearcol {
+                width: 1.5cm;
+                max-width: 1cm;
+            }
+
+            .nowrap {
+
+            }
+            h1 {
+                margin-bottom: 0px;
+                font-size: 17.28pt;
+            }
+
+            h2 {
+                margin: 0;
+                font-size: 14pt;
+            }
+
+            .details {
+                font-size: 9.5pt;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1 id="me">Joseph Carter</h1>
+<h2>Personal Details</h2>
+<table class="details">
+    <tr>
+        <td align="right">Home Address:</td>
+        <td rowspan="2">Available on request (please email)</td>
+    </tr>
+    <tr>
+        <td align="right">Phone:</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td align="right">Email:</td>
+        <td><a href="mailto:joe@josephcarter.co.uk">joe@josephcarter.co.uk</a></td>
+    </tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+        <td align="right">Website:</td>
+        <td><a href="http://josephcarter.co.uk">http://josephcarter.co.uk</a></td>
+    </tr>
+    <tr>
+        <td align="right">LinkedIn:</td>
+        <td><a href="https://uk.linkedin.com/pub/joseph-carter/65/a28/269">https://uk.linkedin.com/pub/joseph-carter/65/a28/269</a></td>
+    </tr>
+    <tr>
+        <td align="right">Github:</td>
+        <td><a href="https://github.com/ylt">https://github.com/ylt</a></td>
+    </tr>
+</table>
+
+<h2>Education</h2>
+<table class="bigtable">
+    <tr>
+        <td class="yearcol" rowspan="2">
+            2014&ndash;2015
+        </td>
+        <td>BSC Hons: Software Engineering,<br/>
+            <strong>University of Wales: Trinity Saint David</strong>
+        </td>
+        <td align="right">
+            <strong>2:2</strong>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="smalltext">
+            <ul class="modules">
+                <li>Major Project</li>
+                <li>Interactive Graphics Programming</li>
+                <li>Real-Time Systems Development</li>
+                <li>Advanced Web Development</li>
+                <li>Distributed &amp; Cluster Based Enterprise Applications</li>
+            </ul>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="yearcol"  rowspan="2">2012&ndash;2014</td>
+        <td>
+            HND: Software Engineering,<br/>
+            <strong>University of Wales: Trinity Saint David</strong>
+        </td>
+        <td align="right"><strong>Pass</strong></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="smalltext">
+            <ul class="modules">
+                <li>Application Design &amp; Development</li>
+                <li>Systems Software &amp; Multi-User Applications Engineering</li>
+                <li>Database Management Systems</li>
+                <li>Data-Centric Windows Programming</li>
+                <li>Algorithms &amp; Data Structures</li>
+                <li>Implementation Project</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+<h2>Work Experience</h2>
+<table class="bigtable">
+    <tr>
+        <td class="yearcol"  rowspan="2"><span class="nowrap">2011</span>&ndash;<span class="nowrap">Present</span></td>
+        <td>Innotex</td>
+        <td align="right"><a href="http://innotex.co.uk">http://innotex.co.uk</a></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="smalltext">
+            Development and Sysadmin, responsible for deploying and running the servers and am on-call for any issues.
+            Develop web applications (such as the new notification system) and also responsible for fixing existing
+            applications in the case of emergencies.
+        </td>
+    </tr>
+    <tr>
+        <td class="yearcol" rowspan="2">2010</td>
+        <td>Bluestone</td>
+        <td align="right"><a href="http://www.bluestonewales.com">http://www.bluestonewales.com</a></td>
+    </tr>
+    <tr>
+        <td conspan="2" class="smalltext">
+            GCSE work experience: basic network admin, itemised inventory, set up the DHCP virtual machine management
+            (safely power down on signal from UPS). Learnt about VLANS, etc.
+        </td>
+    </tr>
+</table>
+
+<h2>Projects worked on</h2>
+<table class="bigtable">
+    <tr>
+        <td class="yearcol" rowspan="2">2015</td>
+        <td>Grommit (and Wallace)</td>
+        <td align="right"><a href="https://github.com/WritheM/Wallace">https://github.com/WritheM/Wallace</a></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="smalltext">
+            Grommit is a modular node.js plugin and event system (in Wallace repository for now), allows loading,
+            unloading and refreshing of plugins<br/>
+            Wallace is a bot implementation ontop of Grommit that takes advantage of the flexible behaviour.
+        </td>
+    </tr>
+    <tr>
+        <td class="yearcol" rowspan="2">2014&ndash;2015</td>
+        <td>Major project (2:1): LaTeX editor</td>
+        <td align="right"><a href="https://github.com/ylt/LaTeX-Editor">https://github.com/ylt/LaTeX-Editor</a></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="smalltext">
+            A web-based LaTeX editor. A lexer and parser which allowed creating an object view of document, which was
+            then transformed into XML, this was then styled via css. Edits could be transferred back to LaTeX by
+            reversing the process: reading in the DOM and generating LaTeX code.
+        </td>
+    </tr>
+    <tr>
+        <td class="yearcol" rowspan="2">2014</td>
+        <td>AWESOME</td>
+        <td align="right"><a href="https://github.com/bbrks/AWESOME">https://github.com/bbrks/AWESOME</a></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="smalltext">
+            Worked on AWESOME in the early stages, done the majority of code which I handed off to Keiron O'Shea.
+            AWESOME is a questionnaire system that provides personalised questions for each user based upon their
+            modules. It was implemented as regular PHP with Twig being used for views.
+        </td>
+    </tr>
+</table>
+
+<h2>Skills</h2>
+<table class="details">
+    <tr>
+        <td>Sysadmin:</td>
+        <td>Debian, Ubuntu, CentOS</td>
+    </tr>
+    <tr>
+        <td>Continuous Integration:</td>
+        <td>Jenkins, Travis, Gradle</td>
+    </tr>
+    <tr>
+        <td>Platforms:</td>
+        <td>Django, Symfony, Twisted, Drupal, Nodejs</td>
+    </tr>
+    <tr>
+        <td>Programming Languages:</td>
+        <td>PHP, Javascript 5 + 6, Python, Java, Bash, C, C++</td>
+    </tr>
+    <tr>
+        <td>Other Technologies:</td>
+        <td>MySQL, PostgreSQL, MongoDB, Apache, Nginx, Lighttpd</td>
+    </tr>
+</table>
+<h2>References</h2>
+<table class="details">
+    <tr>
+        <td>Keiron O'Shea (AWESOME)</td>
+        <td><a href="https://www.d3s.co/keiron_ref.pdf">https://www.d3s.co/keiron_ref.pdf</a></td>
+    </tr>
+    <tr>
+        <td>Brian (Innotex)</td>
+        <td><a href="https://www.d3s.co/brian_ref.pdf">https://www.d3s.co/brian_ref.pdf</a></td>
+    </tr>
+</table>
+</body>
+</html>
