@@ -1,165 +1,42 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title></title>
     <meta content="">
-    <style>
-        @font-face {
-            font-family: Fontin;
-            src: url(Fontin.otf);
-        }
-        @font-face {
-            font-family: Fontin;
-            src: url(Fontin-Bold.otf);
-            font-weight: bold;
-        }
-        /* browser only supports faked small caps
-            so add smallcaps variant under another name
-        */
-        @font-face {
-            font-family: "Fontin Small Caps";
-            src: url(Fontin-SmallCaps.otf);
-        }
-
-
-        body {
-            max-width: 11in;
-            margin-left: auto;
-            margin-right: auto;
-
-            margin-top: 0.5in;
-
-            font-size: 10pt;
-            font-family: FontIn;
-        }
-
-        h1 {
-            font-size: 24pt;
-            text-align: center;
-
-            font-weight: normal;
-        }
-
-        h2 {
-            padding-bottom: 1px;
-            border-bottom: #000 1px solid;
-            font-family: FontIn Small Caps;
-            font-weight: normal;
-            font-size: 17.28pt;
-        }
-
-        .bigtable {
-            margin: auto;
-            width: 95%;
-        }
-
-        ul.modules {
-            padding: 0;
-            margin: 0;
-        }
-
-        ul.modules li {
-            display: inline-block;
-            font-size: 9pt;
-        }
-
-        /* inline block gets rid of bullets, re-add them */
-        ul.modules li:before {
-            content: "\2022";
-        }
-
-        .yearcol {
-            min-width: 1cm;
-            width: 3cm;
-            word-wrap:break-word;
-            max-width: 3cm;
-            text-align: right;
-            padding-right: 5px;
-            vertical-align: top;
-        }
-
-
-        td {
-            padding: 0px;
-        }
-
-        .smalltext {
-            font-size: 9pt;
-            padding-bottom: 2px;
-        }
-
-        a {
-            color: #4078C0;
-        }
-
-        a:visited {
-            color: #4078C0;
-        }
-
-        .details td:first-child {
-            text-align: right;
-            padding-right: 20px;
-            font-family: FontIn Small Caps;
-        }
-
-        .nowrap {
-            display: inline-block;
-            white-space: nowrap;
-        }
-
-
-        @media print, screen and (max-width: 800px){
-            body {
-                width: 100%;
-                margin: 0;
-            }
-            .yearcol {
-                width: 1.5cm;
-                max-width: 1cm;
-            }
-
-            .nowrap {
-
-            }
-            h1 {
-                margin-bottom: 0px;
-                font-size: 17.28pt;
-            }
-
-            h2 {
-                margin: 0;
-                font-size: 14pt;
-            }
-
-            .details {
-                font-size: 9.5pt;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-<h1 id="me">Joseph Carter</h1>
+<h1 id="me">Joe Carter</h1>
+<div class="bio">
+    <p>I am looking for Software Engineering orientated roles. My current fields of expertise are mostly consisting
+        of Node.js, PHP, C++, Java and Python. I absolutely love learning new technologies and can adapt to any
+        stack.</p>
+</div>
 <h2>Personal Details</h2>
 <table class="details">
     <tr>
-        <td align="right">Home Address:</td>
-        <td rowspan="2">Available on request (please email)</td>
+        <td align="right">Location:</td>
+        <td>South West Wales (Pembrokeshire), <strong>Looking to relocate.</strong></td>
     </tr>
     <tr>
         <td align="right">Phone:</td>
-        <td></td>
+        <td>Available on request</td>
     </tr>
     <tr>
         <td align="right">Email:</td>
         <td><a href="mailto:joe@josephcarter.co.uk">joe@josephcarter.co.uk</a></td>
     </tr>
-    <tr><td>&nbsp;</td></tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
     <tr>
         <td align="right">Website:</td>
         <td><a href="http://josephcarter.co.uk">http://josephcarter.co.uk</a></td>
     </tr>
     <tr>
         <td align="right">LinkedIn:</td>
-        <td><a href="https://uk.linkedin.com/pub/joseph-carter/65/a28/269">https://uk.linkedin.com/pub/joseph-carter/65/a28/269</a></td>
+        <td><a href="https://uk.linkedin.com/pub/joseph-carter/65/a28/269">https://uk.linkedin.com/pub/joseph-carter/65/a28/269</a>
+        </td>
     </tr>
     <tr>
         <td align="right">Github:</td>
@@ -167,119 +44,7 @@
     </tr>
 </table>
 
-<h2>Education</h2>
-<table class="bigtable">
-    <tr>
-        <td class="yearcol" rowspan="2">
-            2014&ndash;2015
-        </td>
-        <td>BSC Hons: Software Engineering,<br/>
-            <strong>University of Wales: Trinity Saint David</strong>
-        </td>
-        <td align="right">
-            <strong>2:2</strong>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2" class="smalltext">
-            <ul class="modules">
-                <li>Major Project</li>
-                <li>Interactive Graphics Programming</li>
-                <li>Real-Time Systems Development</li>
-                <li>Advanced Web Development</li>
-                <li>Distributed &amp; Cluster Based Enterprise Applications</li>
-            </ul>
-        </td>
-    </tr>
 
-    <tr>
-        <td class="yearcol"  rowspan="2">2012&ndash;2014</td>
-        <td>
-            HND: Software Engineering,<br/>
-            <strong>University of Wales: Trinity Saint David</strong>
-        </td>
-        <td align="right"><strong>Pass</strong></td>
-    </tr>
-    <tr>
-        <td colspan="2" class="smalltext">
-            <ul class="modules">
-                <li>Application Design &amp; Development</li>
-                <li>Systems Software &amp; Multi-User Applications Engineering</li>
-                <li>Database Management Systems</li>
-                <li>Data-Centric Windows Programming</li>
-                <li>Algorithms &amp; Data Structures</li>
-                <li>Implementation Project</li>
-            </ul>
-        </td>
-    </tr>
-</table>
-
-<h2>Work Experience</h2>
-<table class="bigtable">
-    <tr>
-        <td class="yearcol"  rowspan="2"><span class="nowrap">2011</span>&ndash;<span class="nowrap">Present</span></td>
-        <td>Innotex</td>
-        <td align="right"><a href="http://innotex.co.uk">http://innotex.co.uk</a></td>
-    </tr>
-    <tr>
-        <td colspan="2" class="smalltext">
-            Development and Sysadmin, responsible for deploying and running the servers and am on-call for any issues.
-            Develop web applications (such as the new notification system) and also responsible for fixing existing
-            applications in the case of emergencies.
-        </td>
-    </tr>
-    <tr>
-        <td class="yearcol" rowspan="2">2010</td>
-        <td>Bluestone</td>
-        <td align="right"><a href="http://www.bluestonewales.com">http://www.bluestonewales.com</a></td>
-    </tr>
-    <tr>
-        <td conspan="2" class="smalltext">
-            GCSE work experience: basic network admin, itemised inventory, set up the DHCP virtual machine management
-            (safely power down on signal from UPS). Learnt about VLANS, etc.
-        </td>
-    </tr>
-</table>
-
-<h2>Projects worked on</h2>
-<table class="bigtable">
-    <tr>
-        <td class="yearcol" rowspan="2">2015</td>
-        <td>Grommit (and Wallace)</td>
-        <td align="right"><a href="https://github.com/WritheM/Wallace">https://github.com/WritheM/Wallace</a></td>
-    </tr>
-    <tr>
-        <td colspan="2" class="smalltext">
-            Grommit is a modular node.js plugin and event system (in Wallace repository for now), allows loading,
-            unloading and refreshing of plugins<br/>
-            Wallace is a bot implementation ontop of Grommit that takes advantage of the flexible behaviour.
-        </td>
-    </tr>
-    <tr>
-        <td class="yearcol" rowspan="2">2014&ndash;2015</td>
-        <td>Major project (2:1): LaTeX editor</td>
-        <td align="right"><a href="https://github.com/ylt/LaTeX-Editor">https://github.com/ylt/LaTeX-Editor</a></td>
-    </tr>
-    <tr>
-        <td colspan="2" class="smalltext">
-            A web-based LaTeX editor. A lexer and parser which allowed creating an object view of document, which was
-            then transformed into XML, this was then styled via css. Edits could be transferred back to LaTeX by
-            reversing the process: reading in the DOM and generating LaTeX code.
-        </td>
-    </tr>
-    <tr>
-        <td class="yearcol" rowspan="2">2014</td>
-        <td>AWESOME</td>
-        <td align="right"><a href="https://github.com/bbrks/AWESOME">https://github.com/bbrks/AWESOME</a></td>
-    </tr>
-    <tr>
-        <td colspan="2" class="smalltext">
-            Worked on AWESOME in the early stages, done the majority of code which I handed off to Keiron O'Shea.
-            AWESOME is a questionnaire system that provides personalised questions for each user based upon their
-            modules. It was implemented as regular PHP with Twig being used for views.
-        </td>
-    </tr>
-</table>
 
 <h2>Skills</h2>
 <table class="details">
@@ -288,32 +53,662 @@
         <td>Debian, Ubuntu, CentOS</td>
     </tr>
     <tr>
-        <td>Continuous Integration:</td>
-        <td>Jenkins, Travis, Gradle</td>
+        <td>Java:</td>
+        <td>Maven, Gradle, Swing, Spring, JUnit, Mockito</td>
     </tr>
     <tr>
-        <td>Platforms:</td>
-        <td>Django, Symfony, Twisted, Drupal, Nodejs</td>
+        <td>Node.js:</td>
+        <td> Express, koajs, gulp, grunt, pm2, Sequelize (ORM mapping)</td>
+    </tr>
+    <tr>
+        <td>Javascript:</td>
+        <td> ES 2016 (babel), typescript, livescript, coffeescript, dart, Mocha, Angular, Chai</td>
+    </tr>
+    <tr>
+        <td>AWS:</td>
+        <td> IAM, VPC, EC2, Route53, S3,</td>
+    </tr>
+    <tr>
+        <td>Devops:</td>
+        <td> Docker, Docker Swarm, Docker Compose, Kubernetes, Vagrant</td>
+    </tr>
+    <tr>
+        <td>Continuous Integration:</td>
+        <td> Jenkins, Travis, Gradle</td>
+    </tr>
+    <tr>
+        <td>Databases:</td>
+        <td> MySQL, PostgreSQL, MongoDB, Redis, InfluxDB</td>
     </tr>
     <tr>
         <td>Programming Languages:</td>
-        <td>PHP, Javascript 5 + 6, Python, Java, Bash, C, C++</td>
+        <td> Javascript/ECMASCRIPT 5 + 6, Python, Java, Bash, C, C++, C\#</td>
+    </tr>
+    <tr>
+        <td>Android:</td>
+        <td> Xamarin, Kotlin/Cordova, Java, Firebase, Bluetooth</td>
     </tr>
     <tr>
         <td>Other Technologies:</td>
-        <td>MySQL, PostgreSQL, MongoDB, Apache, Nginx, Lighttpd</td>
+        <td> Apache, Nginx, Lighttpd, PHPUnit, Git, SVN</td>
     </tr>
 </table>
-<h2>References</h2>
-<table class="details">
-    <tr>
-        <td>Keiron O'Shea (AWESOME)</td>
-        <td><a href="https://www.d3s.co/keiron_ref.pdf">https://www.d3s.co/keiron_ref.pdf</a></td>
-    </tr>
-    <tr>
-        <td>Brian (Innotex)</td>
-        <td><a href="https://www.d3s.co/brian_ref.pdf">https://www.d3s.co/brian_ref.pdf</a></td>
-    </tr>
-</table>
+
+
+
+<h2>Education</h2>
+<div class="bigtable">
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                2014<br/>2015
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        BSC Hons: Software Engineering,<br/>
+                        <strong>University of Wales: Trinity Saint David</strong>
+                    </div>
+                    <div class="joburl">
+
+                    </div>
+                </div>
+                <div class="description">
+                    <ul class="modules">
+                        <li>Major Project</li>
+                        <li>Interactive Graphics Programming</li>
+                        <li>Real-Time Systems Development</li>
+                        <li>Advanced Web Development</li>
+                        <li>Distributed &amp; Cluster Based Enterprise Applications</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                2012<br/>2014
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        HND: Software Engineering,<br/>
+                        <strong>University of Wales: Trinity Saint David</strong>
+                    </div>
+                    <div class="joburl">
+
+                    </div>
+                </div>
+                <div class="description">
+                    <ul class="modules">
+                        <li>Application Design &amp; Development</li>
+                        <li>Systems Software &amp; Multi-User Applications Engineering</li>
+                        <li>Database Management Systems</li>
+                        <li>Data-Centric Windows Programming</li>
+                        <li>Algorithms &amp; Data Structures</li>
+                        <li>Implementation Project</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<h2>Work Experience</h2>
+<div class="bigtable">
+
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                <span class="nowrap">Feb 2017</span><br/><span class="nowrap">Present</span>
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        Innotex Ltd &amp; Innotex Development Ltd
+                    </div>
+                    <div class="joburl">
+                        <a href="http://innotex.co.uk">http://innotex.co.uk</a>
+                    </div>
+                </div>
+                <div class="description">
+                    Development and Sysadmin, responsible for deploying and running the servers and am on-call for any
+                    issues.
+                    Develop web applications (such as the new notification system) and also responsible for fixing
+                    existing
+                    applications in the case of emergencies.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                Oct2015 <br/> Jan2017
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        Red-Wing Interactive
+                    </div>
+                    <div class="joburl">
+                        <a href="http://www.red-wing.com">http://www.red-wing.com</a>
+                    </div>
+                </div>
+                <div class="description">
+                    PHP Developer, development of bespoke client websites and improving the companies custom PHP
+                    framework
+                    (SM4). Sites are designed and implemented fitting the clients requirements. Core framework is also
+                    developed on in order to fix bugs and to add in additional features, this is done without breaking
+                    compatibility with the various sites that depend on it.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                2014 <br/> 2015
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        Creative Ocean
+                    </div>
+                    <div class="joburl">
+
+                    </div>
+                </div>
+                <div class="description">
+                    In this role, apps for small-medium sized business were developed, for many of these it involved
+                    converting their site to an app based system which allowed for higher marketing potential through
+                    the
+                    use of push notifications in addition providing custom solutions to fit to the businesses
+                    requirements.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                2011 <br/> 2014
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        Innotex Ltd
+                    </div>
+                    <div class="joburl">
+
+                    </div>
+                </div>
+                <div class="description">
+                    Contract work done alongside university. Development and Sysadmin, responsible for deploying and
+                    running
+                    the servers and on-call for any issues. Develop web applications and also responsible for fixing
+                    existing applications in the case of emergencies.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<h2>Projects worked on</h2>
+<div class="bigtable">
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                Aug2017
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        Lumberjack
+                    </div>
+                    <div class="jobclient">
+                        WritheM
+                    </div>
+                    <div class="joburl">
+
+                    </div>
+                </div>
+                <div class="description">
+                    Still in development, an Android data collection and tracking tool developed using Xamarin, mainly
+                    focusing on Android APIs. This continually collects metrics such as sensor data, gps location for
+                    company device management.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                Aug2017
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        Librebank
+                    </div>
+                    <div class="jobclient">
+                        Innotex
+                    </div>
+                    <div class="joburl">
+
+                    </div>
+                </div>
+                <div class="description">
+                    Still in early development, this is a node.js based open-source bank agnostic library. The aim is to
+                    provide a standardised library targeting all banks. This is developed in typescript which allows
+                    defining the data structures and allows for compile time checking for if the bank implementations
+                    are
+                    compliant. Currently implementations are in progress for the banks Starling, Monzo, Paypal and Tide.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                Mar2017
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        Starling Bot
+                    </div>
+                    <div class="jobclient">
+                        Innotex
+                    </div>
+                    <div class="joburl">
+
+                    </div>
+                </div>
+                <div class="description">
+                    Node.js based bot for Facebook Messenger, this allows you to check your account, this includes
+                    checking
+                    your recent transactions and balance.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                Mar2017
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        Marconi
+                    </div>
+                    <div class="jobclient">
+                        WritheM
+                    </div>
+                    <div class="joburl">
+                        <a href="https://github.com/WritheM/Marconi/">https://github.com/WritheM/Marconi/</a>
+                    </div>
+                </div>
+                <div class="description">
+                    Node.js based data logger for Reddit live threads. This utilises the reddit API's to monitor for
+                    stat
+                    changes, and pushes this onto a influxdb server. These are then visualised using a Grafana instance.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                April2017
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        Innotex Servers
+                    </div>
+                    <div class="joburl">
+
+                    </div>
+                </div>
+                <div class="description">
+                    Deployed new servers for Innotex Ltd. KVM was used as the hypervisor, hosting a cluster of
+                    virtualised
+                    servers running Kubernetes. Custom docker images were implemented to host the various applications.
+                    Virtual network subnets were used for isolation, with no two containers having access between each
+                    other
+                    unless dependent.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                Feb2017 <br/> May2017
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        Ricks Retro
+                    </div>
+                    <div class="jobclient">
+                        Innotex
+                    </div>
+                    <div class="joburl">
+                        <a href="https://ricksretro.co.uk">https://ricksretro.co.uk</a>
+                    </div>
+                </div>
+                <div class="description">
+                    Work towards the new ricks retro website. This is a fresh Symfony2 website build, with the majority
+                    of
+                    the logic implemented from scratch.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                Oct2016 <br/> Dec2016
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        MCSEC
+                    </div>
+                    <div class="jobclient">
+                        Red-Wing
+                    </div>
+                    <div class="joburl">
+                        <a href="https://www.mcsec.co.uk">https://www.mcsec.co.uk</a>
+                    </div>
+                </div>
+                <div class="description">
+                    Website for MCSEC (Marlborough College School of English and Culture) based on Resirva
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                Aug2016
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        Resirva Summer School Platform
+                    </div>
+                    <div class="jobclient">
+                        WritheM
+                    </div>
+                    <div class="joburl">
+                        <a href="http://resirva.com">http://resirva.com</a>
+                    </div>
+                </div>
+                <div class="description">
+                    Development of the Resirva platform. Based on the learning experiences of building other summer
+                    school
+                    sites.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                Oct2016 <br/> Dec2016
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        Nectar
+                    </div>
+                    <div class="jobclient">
+                        WritheM
+                    </div>
+                    <div class="joburl">
+                        <a href="http://nectar.net">http://nectar.net</a>
+                    </div>
+                </div>
+                <div class="description">
+                    A fresh website reskin for Nectar, this is a legacy ASP classic website
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                Sep2016
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        SBooks
+                    </div>
+                    <div class="jobclient">
+                        WritheM
+                    </div>
+                    <div class="joburl">
+                        <a href="http://sbooks.co.uk">http://sbooks.co.uk</a>
+                    </div>
+                </div>
+                <div class="description">
+                    SBooks is a responsive single page website build. All content is fully CMS managed.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                Oct2015 <br/> May2016
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        St Edmunds College
+                    </div>
+                    <div class="jobclient">
+                        WritheM
+                    </div>
+                    <div class="joburl">
+                        <a href="https://stedmundscollege.co.uk">https://stedmundscollege.co.uk</a>
+                    </div>
+                </div>
+                <div class="description">
+                    Development of St Edmunds College website, this is a major website build, with a large front end
+                    booking
+                    process on the frontend and a large "backoffice" management of the summer school.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                Jul 2015 <br/> Oct 2015
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        Bonsai
+                    </div>
+                    <div class="jobclient">
+                        WritheM
+                    </div>
+                    <div class="joburl">
+                        <a href="https://github.com/WritheM/Bonsai">https://github.com/WritheM/Bonsai</a>
+                    </div>
+                </div>
+                <div class="description">
+                    <p>
+                        Node.js Music based social network. This is a fairly large build. The frontend is based on
+                        React,
+                        with Redux. This communicated with the backend via socket.io / engine.io.
+                    </p>
+                    <p>
+                        The backend consisted of multiple layers. It uses a message bus based design. At the heart of it
+                        is
+                        a RabbitMQ service. The socket.io/engine.io from browser talks to the "bridge", this bridges
+                        messages from the browser socket onto the RabbitMQ and also handles other aspects such as client
+                        subscriptions to messages, etc.
+                    </p>
+                    <p>
+                        The workers are implemented as microservices listening on the RabbitMQ, they emit messages onto
+                        the
+                        RabbitMQ bus, and also listen for messages such as RPC commands, and responds them. This is
+                        horizontally scaled using pm2. The workers implemented RPC functions, and these were done
+                        inplace of
+                        using HTTP calls - the overall design of the API based based around the ideas of REST, wih
+                        routes
+                        being used along with an action.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                2015
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        Wallace
+                    </div>
+                    <div class="jobclient">
+                        WritheM
+                    </div>
+                    <div class="joburl">
+                        <a href="https://github.com/WritheM/Wallace">https://github.com/WritheM/Wallace</a>
+                    </div>
+                </div>
+                <div class="description">
+                    A heavy Node.js project, an experiment into making a more modular event emitter system. Wallace is a
+                    two-part project, at its core is another of my projects: Grommit, this is a modular node.js plugin
+                    and
+                    event system (in Wallace repository for now), allows loading, unloading and refreshing of plugins
+
+                    Wallace is a bot implementation on-top of Grommit that takes advantage of the flexible behaviour.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                2015
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        XRP Radio
+                    </div>
+                    <div class="jobclient">
+                        Innotex
+                    </div>
+                    <div class="joburl">
+                        <a href="http://xrpradio.co.uk">http://xrpradio.co.uk</a>
+                    </div>
+                </div>
+                <div class="description">
+                    A website build, this website is interactive with many users interacting with each other in
+                    realtime.
+                    Much of the work was getting it scalable at peak times when a large event is on.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                2014 <br/> 2015
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        Interactive LaTeX editor
+                    </div>
+                    <div class="jobclient">
+                        University Major Project
+                    </div>
+                    <div class="joburl">
+                        <a href="https://github.com/ylt/LaTeX-Editor">https://github.com/ylt/LaTeX-Editor</a>
+                    </div>
+                </div>
+                <div class="description">
+                    A purely Javascript based web-based LaTeX editor. This was implemented using prototype.js. A lexer
+                    and
+                    parser which allowed creating an object view of document, which was then transformed into XML, this
+                    was
+                    then styled via css. Edits could be transferred back to LaTeX by reversing the process: reading in
+                    the
+                    DOM and generating LaTeX code.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="role">
+        <div class="role-contents">
+            <div class="yearcol">
+                2012
+            </div>
+            <div class="details">
+                <div class="jobline">
+                    <div class="jobname">
+                        Rules
+                    </div>
+                    <div class="jobclient">
+                        Personal
+                    </div>
+                    <div class="joburl">
+
+                    </div>
+                </div>
+                <div class="description">
+                    Java plugin for the game Minecraft, this was targeting the custom server software named ``bukkit`.
+                    This
+                    also was MySQL backed - with a transactional datastore storing changes to state, with a cached
+                    summary
+                    of current permissions. Multiple servers accessed to this shared database, and determined updates to
+                    the
+                    state. A custom MySQL plugin was implemented in C to allow for more precise timestamps.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
