@@ -18,6 +18,9 @@
   font-size: 9pt;
   padding-bottom: 2px; }
 
+.clear {
+  clear: both; }
+
 a,
 a:visited {
   color: #4078C0; }
@@ -37,7 +40,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0.5in;
-  font-size: 12pt;
+  font-size: 11pt;
   font-family: FontIn, serif; }
 
 h1 {
@@ -54,9 +57,35 @@ h2 {
   font-weight: normal;
   font-size: 17.28pt; }
 
+.pdf-wrapper, .pdf-wrapper:link, .pdf-wrapper:visited {
+  position: fixed;
+  top: 0;
+  right: 10%;
+  border: 1px solid black;
+  border-top: 0;
+  padding: 5px;
+  border-radius: 0px 0px 5px 5px;
+  font-weight: bold;
+  background: #141730;
+  color: white;
+  cursor: pointer;
+  outline: inherit;
+  font-family: FontIn, serif;
+  text-decoration: none; }
+
 .bio {
   text-align: center;
+  font-size: 95%;
   margin-bottom: -5mm; }
+
+.contact-wrapper {
+  display: flex;
+  width: 100%; }
+
+.contact {
+  float: left;
+  flex-grow: 1;
+  width: 50%; }
 
 div.bigtable {
   margin: auto;
